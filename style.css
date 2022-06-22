@@ -466,7 +466,65 @@ main{
     color: var(--just-white);
 }
 
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
 
+.plan-card--price{
+    padding: 5px 0;
+    position: relative;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+
+.plan-card--price::before {
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: absolute;
+    content: '$';
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1rem;
+    top: 20%;
+    left: calc(50% - 45px);  
+}
+
+.plan-card--saving{
+    color: #757575;
+    font-size: 1.2rem;
+}
+
+.plan-card--ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/assets/icons/orange-right-arrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+/* Terminar las tarjetas de planes */
 
 
 
