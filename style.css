@@ -159,7 +159,7 @@ main{
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 5px;
     font-family: "Inter", sans-serif;
    
 }
@@ -173,6 +173,14 @@ main{
 
 }
 
+.main-currency-table .currency-table--title-two{
+    color: var(--secondary-blue);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+
 .currency-table--container{
     width: 90%;
     min-width: 230px;
@@ -180,6 +188,17 @@ main{
     height: 250px;
     margin: 0 auto;
    
+}
+
+.main-tables-container{
+    display: flex;
+    scroll-snap-align: center;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+   
+  
 }
 
 .currency-table--container table{
@@ -440,13 +459,22 @@ main{
     color: #757575;
 }
 
+.plans-container--slider{
+    display: flex;
+    scroll-snap-align: center;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+}
+
 .plans-container--card{
     position: relative;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -528,10 +556,10 @@ main{
 .plans-container--card-two{
     position: relative;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -613,10 +641,10 @@ main{
 .plans-container--card-three{
     position: relative;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--warm-black);
     border-radius: 15px;
@@ -698,8 +726,42 @@ main{
     vertical-align: text-bottom;
 }
 
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
 
-/* Terminar las tarjetas de planes */
+footer section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul{
+    font-size:1.4rem ;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+
+}
+
+.left li{
+    margin: 10px 0;
+}
+
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+.left a:hover{
+    text-decoration: underline;
+}
+    
+
 
 
 
